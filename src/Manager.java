@@ -78,7 +78,10 @@ public class Manager {
             String checkY = scanner.nextLine();
             if (checkY.equals("y")) {
                 listDanhBa.remove(check);
-            } else Main.menu();
+                System.out.println("Đã xoá");
+            } else {
+                System.out.println("chưa xoá");
+                Main.menu();}
         }
 
     }
